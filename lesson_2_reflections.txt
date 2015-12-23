@@ -1,0 +1,1 @@
+running git init within a directory creates a git repository.  A .git directory which git uses to track history

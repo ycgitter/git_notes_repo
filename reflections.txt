@@ -1,0 +1,41 @@
+Using diff - comparing working version with new version minimizes the amount of code to look at which helps spot where an error may have been introduced.
+
+Keeping versions of code helps backtrack to versions that had particular features working.
+
+To configure WinMergeU as difftool
+Put this in c:\Users\Yeida\.gitconfig
+    [diff]
+        tool = winmerge
+    [difftool "winmerge"]
+        cmd = "'C:/Program Files/WinMerge-2.0.14/WinMergeU.exe'" -u -e "$LOCAL" "$REMOTE"
+
+Commit - creates a new version
+Id - unique id
+Author
+Date
+Comment
+
+Repository - multiple files
+  Commits all files in repository (even if some files are not changed)
+
+
+git log          See history of every commit (most recent on top which is the HEAD)
+
+git diff id1 id2    Diff between two commit versions (compares all files in repo)
+git diff id1 id2 fname   Diff between two commit versions (compares just fname)
+git difftool             Diff using difftool (configured for winmergeu)
+
+
+git log --stat      Shows which files changed in each commit (added or removed code)
+
+git clone      Cloning a repository
+
+git config color.ui auto   Set color.ui config setting
+git config --list          List config settings
+
+git checkout <commit id>    to set all files in repository to that commit version
+git checkout master         to get back to head version (?)
+
+git init                Create a git repository. 
+git status              Shows which files have changed since last commit
+
