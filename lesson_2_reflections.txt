@@ -1,1 +1,3 @@
-running git init within a directory creates a git repository.  A .git directory which git uses to track history
+running git init within a directory creates a git repository.  A .git directory which git uses to track history.  Files still have to be 'added' to the repository through a staging process.
+
+Staging area should logically group changed files prior to a commit. Commit puts versioned file(s) into the repository.
