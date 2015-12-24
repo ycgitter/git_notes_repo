@@ -1,3 +1,21 @@
-running git init within a directory creates a git repository.  A .git directory which git uses to track history.  Files still have to be 'added' to the repository through a staging process.
+running git init within a directory creates a git repository.  A .git directory contains metadata which git uses to track history.  Files still have to be 'added' to the repository through a staging process.  
 
 Staging area should logically group changed files prior to a commit. Commit puts versioned file(s) into the repository.
+
+There are three entities to keep in mind:
+Working Directory - 
+    This is typically the files associated with some commit level, 
+    and then changes might be made, perhaps to fix a bug or to add a feature
+Staging Area
+    When some set of files has been changed and is ready to be versioned, these 
+    files are grouped together into the staging area via git add
+Repository
+    The staged files are put into the repository via git commit
+
+
+git diff            diff between Working Dir and Staging
+git diff id1 id2    diff between Commit-id1 and Commit-id2
+git diff --staged   diff between Staging and current commit
+
+git reset --hard    Resets staging to empty, Resets working directory to current commit
+                    All edits in Working Dir will be lost

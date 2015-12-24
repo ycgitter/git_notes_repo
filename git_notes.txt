@@ -21,8 +21,12 @@ Repository - multiple files
 
 git log          See history of every commit (most recent on top which is the HEAD)
 
-git diff id1 id2    Diff between two commit versions (compares all files in repo)
-git diff id1 id2 fname   Diff between two commit versions (compares just fname)
+git diff id1 id2        Diff between two commit versions (compares all files in repo)
+git diff id1 id2 fname  Diff between two commit versions (compares just fname)
+
+git diff                Diff between working directory and staging area 
+git diff --staged       Diff between staging area and current commit
+
 git difftool             Diff using difftool (configured for winmergeu)
 
 
@@ -37,5 +41,10 @@ git checkout <commit id>    to set all files in repository to that commit versio
 git checkout master         to get back to head version (?)
 
 git init                Create a git repository. 
-git status              Shows which files have changed since last commit
+git status              Show which files have changed since last commit
 
+git add                 Put current snapshot of file into the staging area 
+git commit              Put all files in staging area into repository
+
+git reset --hard        Reset Working Dir to current commit (any edits will be lost)
+                        Anything in Staging will be lost
