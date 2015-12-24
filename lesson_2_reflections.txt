@@ -33,3 +33,14 @@ BRANCHING
     are applied only to the checked-out branch
 
     Use branches for side projects, releases and their bug fixes
+
+MERGING
+    git merge master coins (from master)
+    git log --graph  will show branch point, merged commits, and merged commit point
+
+MERGE CONFLICT
+    git informs you of unmerged paths(Files).  
+    The file will have HEAD===, master <<<, branch >>> lines added to the conflicted files
+    Edit all files to resolve the conflicts, then do "git add <file(s)>"  and git commit
+
+    git mergetool to use visual tool (currently configured for kdiff3 - save merged output to conflicted file)

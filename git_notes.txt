@@ -54,3 +54,16 @@ git reset HEAD <file>   Undo a "git add <file>".  Edits to <file> will be kept i
 git branch              See existing branches
 git branch <branch>     Create new branch names <branch> from current commit
 git checkout <branch>   Put yourself on <branch> branch
+git checkout -b <branch> Same as git branch <b> and git checkout <b> successively
+
+git log --graph --oneline master branch1 branch2     Show master, b1,b2 branches
+git log -n10 --graph --oneline --decorate --all      Show all branches (--decorate makes more clear)
+
+git merge master <branch>   Merge <branch> into master (assuming master is current checkout)
+                            Don't do this if there are uncommitted changes.
+git branch -d coins     Deletes coins branch label (commits are still kept)
+git show <commit-id>    Show diff between <commit> and parent of <commit>
+
+git mergetool           Starts up kdiff3 to resolve merge conflicts (save to conflicted file)
+git merge --abort       Can only be run if the merge resulted in conflicts. 
+                        Aborts the merge process, and reverts to pre-merge state
