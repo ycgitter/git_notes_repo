@@ -46,5 +46,11 @@ git status              Show which files have changed since last commit
 git add                 Put current snapshot of file into the staging area 
 git commit              Put all files in staging area into repository
 
-git reset --hard        Reset Working Dir to current commit (any edits will be lost)
+git reset --hard        Reset Working Dir to current commit (any edits in WD will be lost)
                         Anything in Staging will be lost
+
+git reset HEAD <file>   Undo a "git add <file>".  Edits to <file> will be kept in Working Dir
+
+git branch              See existing branches
+git branch <branch>     Create new branch names <branch> from current commit
+git checkout <branch>   Put yourself on <branch> branch

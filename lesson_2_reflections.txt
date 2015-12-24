@@ -19,3 +19,17 @@ git diff --staged   diff between Staging and current commit
 
 git reset --hard    Resets staging to empty, Resets working directory to current commit
                     All edits in Working Dir will be lost
+
+
+BRANCHING
+    A branch is a labeled commit version
+    master is the default branch, created when you create a repository
+
+    Checking out an older commit level results in a "detached" HEAD. This means you're
+    looking at a commit without a branch name
+
+    Checking out a branch (by label and not commit-id) puts you on that branch. Any commits 
+    will automatically update the branch label to that commit. The last commit is called the 'tip' of that branch.  A commit level can have multiple branch labels, but future commits
+    are applied only to the checked-out branch
+
+    Use branches for side projects, releases and their bug fixes
