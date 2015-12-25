@@ -1,0 +1,1 @@
+Set up a remote repository on GitHub if you want a central repository that can be accessed from different computers, or by other collaborators
