@@ -1,1 +1,16 @@
-Set up a remote repository on GitHub if you want a central repository that can be accessed from different computers, or by other collaborators
+Set up a remote repository on GitHub if you want a central repository that can be accessed from different computers, or by other collaborators.
+
+Generally want to push and pull remote manually so you have control over when these occur.
+If you're in the middle of making changes, you probably don't want to have the confusion 
+of new code coming and going, dealing with merges/merge conflicts, etc.
+
+Forking a repository - clone a repository already on GitHub into a new repository on GitHub,
+but with the ability to push to and pull from the original repository.
+
+Fork - create a clone of a repo on GitHub.  Do this if you need a central repo
+       for collaboration or if working from different computers.
+Clone - copy of a repo.  Can be a local copy of remote GitHub repo, 
+        or local copy of local repo.
+        Can push back easily to repo you own, but need additional steps to push back to
+        a repo owned by someone else.
+Branch - for experimenting or side project on local repo 
