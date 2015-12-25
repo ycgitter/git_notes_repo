@@ -8,6 +8,7 @@ Put this in c:\Users\Yeida\.gitconfig
         tool = winmerge
     [difftool "winmerge"]
         cmd = "'C:/Program Files/WinMerge-2.0.14/WinMergeU.exe'" -u -e "$LOCAL" "$REMOTE"
+(git difftool doesn't work in cygwin window)
 
 Commit - creates a new version
 Id - unique id
@@ -24,10 +25,10 @@ git log          See history of every commit (most recent on top which is the HE
 git diff id1 id2        Diff between two commit versions (compares all files in repo)
 git diff id1 id2 fname  Diff between two commit versions (compares just fname)
 
+git diff HEAD           Diff between working directory and current commit 
 git diff                Diff between working directory and staging area 
 git diff --staged       Diff between staging area and current commit
-
-git difftool             Diff using difftool (configured for winmergeu)
+git difftool            Diff using difftool (configured for winmergeu)
 
 
 git log --stat      Shows which files changed in each commit (added or removed code)

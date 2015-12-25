@@ -43,4 +43,15 @@ MERGE CONFLICT
     The file will have HEAD===, master <<<, branch >>> lines added to the conflicted files
     Edit all files to resolve the conflicts, then do "git add <file(s)>"  and git commit
 
-    git mergetool to use visual tool (currently configured for kdiff3 - save merged output to conflicted file)
+    git mergetool to use visual tool (currently configured for kdiff3 - Merge->merge all,right click on <Merge Conflict> to select version, save merged output to conflicted file)
+
+
+GITHUB
+    Hosting repositories on GitHub
+    ycgitter ycjunkemail@gmail.com 
+    Create a repository on GitHub
+    on desktop, add 'remote'
+    git remote add origin https://github.com/ycgitter/git_notes_repo.git
+    git remote -v   (to confirm)
+
+    git push origin master
